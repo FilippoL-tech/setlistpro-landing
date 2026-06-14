@@ -104,6 +104,8 @@
     .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--text); }
     .footer-logo b { color: var(--accent); }
     footer p { font-size: .8rem; color: var(--muted); }
+    .ig-link { display: inline-flex; align-items: center; gap: 8px; color: var(--text); text-decoration: none; font-size: .9rem; padding: 8px 16px; border: 1px solid var(--border); border-radius: 999px; transition: border-color .2s, color .2s; }
+    .ig-link:hover { border-color: var(--accent); color: var(--accent); }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
     @media (max-width: 700px) { nav { padding: 16px 20px; } .nav-links { display: none; } .pricing-wrap { grid-template-columns: 1fr; } .support-box { padding: 32px 20px; } footer { flex-direction: column; text-align: center; } }
   </style>
@@ -255,6 +257,14 @@
 
 <footer>
   <span class="footer-logo">Setlist<b>Pro</b></span>
+  <a class="ig-link" href="https://www.instagram.com/setlistpro_app/" target="_blank" rel="noopener">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+    </svg>
+    Seguici su Instagram
+  </a>
   <p>Fatto con 🎸 per tutti i musicisti</p>
   <p style="color:var(--muted);font-size:.8rem;">© 2026 SetlistPro — <a href="mailto:supportosetlistpro@gmail.com" style="color:var(--muted);">supportosetlistpro@gmail.com</a></p>
 </footer>
